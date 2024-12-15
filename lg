@@ -1,0 +1,10 @@
+#!/bin/sh
+LOGFILE=~/org/.log
+tags=""
+DATE=$(date +"%Y-%M-%d %H:%M:%S")
+for t in $@; do
+  tags="${tags} #${t}";
+done
+echo >> $LOGFILE
+echo $DATE $tags >> $LOGFILE
+ed $LOGFILE
