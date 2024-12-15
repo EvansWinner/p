@@ -7,4 +7,4 @@ for t in $@; do
 done
 echo >> $LOGFILE
 echo $DATE $tags >> $LOGFILE
-ed $LOGFILE
+rlwrap ed $LOGFILE
